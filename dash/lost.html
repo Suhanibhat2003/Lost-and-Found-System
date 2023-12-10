@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report lost item</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style type="text/css">
+
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.card-header {
+  border-bottom: none;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  width: 100%;
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+</style>
+</head>
+<body>
+  <form action="lost.php" method="post">
+  <video playsinline autoplay muted loop poster="http://localhost/logincred/images/captcha.jpg" id="bgvid">
+ 
+  <source src="http://localhost/logincred/images/binary.mp4" type="video/mp4">
+</video>
+
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">Report Lost Item</h3>
+      </div>
+      <div class="card-body">
+        <form id="claimForm">
+           <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="text" class="form-control" id="Name" name="Name" required>
+          </div>
+          <div class="form-group">
+            <label for="itemName">Item Name:</label>
+            <input type="text" class="form-control" id="itemName" name="itemName" required>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" class="form-control" id="description" name="description" required>
+          </div>
+
+          <div class="form-group">
+            <label for="dateLost">Date Lost:</label>
+            <input type="date" class="form-control" id="dateLost" name="dateLost" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactInfo">Contact Information:</label>
+            <input type="text" class="form-control" id="contactInfo" name="contactInfo"  pattern="[0-9]{10}" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

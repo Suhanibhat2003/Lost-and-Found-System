@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Site</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <style type="text/css">
+        :root {
+            --black: #000000;
+        }
+
+        * {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(to right top, #a1a1a1, #84b4d7, #00d1e3, #00e7a2, #a8eb12);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background: #989898ce;
+            width: 350px;
+            padding: 75px 50px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 45px;
+            color: white;
+            font-size: 40px;
+        }
+
+        .textBoxdiv {
+            border-bottom: 2px solid white;
+            position: relative;
+            margin: 35px 0;
+        }
+
+        .textBoxdiv input {
+            background: none;
+            border: none;
+            outline: none;
+            width: 100%;
+            color: white;
+            height: 30px;
+            font-size: 20px;
+        }
+
+        .loginbtn {
+            height: 45px;
+            width: 100%;
+            border: none;
+            outline: none;
+            background: linear-gradient(to right top, #a1a1a1, #84b4d7, #00d1e3, #00e7a2, #a8eb12);
+            background-size: 200%;
+            color: white;
+            font-size: 16px;
+            position: relative;
+            top: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .loginbtn:hover {
+            background-position: right;
+            font-size: 17px;
+        }
+
+        .signup {
+            color: white;
+            margin-top: 45px;
+            text-align: center;
+        }
+
+        .signup a {
+            color: black;
+        }
+
+        .signup a:hover {
+            color: blue;
+        }
+
+        .image {
+            margin-bottom: 45px;
+        }
+
+        .image i {
+            font-size: 2.5rem;
+            color: var(--black);
+            position: relative;
+            top: 50px;
+            left:25px ;
+        }
+
+        .captcha-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #userInput {
+            margin-top: 10px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #result {
+            text-align: center;
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="login.php" method="post" id="loginForm" onsubmit="return validateForm()">
+        <div class="image">
+            <i class="fas fa-user-circle"></i>
+            <h1>Login</h1>
+        </div>
+
+        <div class="textBoxdiv">
+            <input type="email" placeholder="Email" name="email" id="email" required>
+        </div>
+        <div class="textBoxdiv">
+            <input type="password" placeholder="Password" name="password" id="password" required>
+        </div>
+
+        <div class="captcha-container">
+            <h3 style="color: white;">CAPTCHA</h3>
+            <div class="captcha-text" id="captcha"></div>
+            <input type="text" id="userInput" placeholder="Enter CAPTCHA" required>
+        </div>
+        <p id="result"></p>
+        <div class="signup">
+            Don't have an account ?
+            <br>
+            <a href="reg/register.html">Sign up</a>
+        </div>
+        <button class="loginbtn" type="submit">Login</button>
+        
+    </form>
+
+
+    <script>
+        // Generate a random CAPTCHA string
+        function generateCaptcha() {
+            const captchaText = Math.random().toString(36).substr(2, 5);
+            document.getElementById("captcha").textContent = captchaText;
+        }
+
+        // Check if the user's input matches the CAPTCHA and open the page
+        function validateForm() {
+            const userInput = document.getElementById("userInput").value;
+            const captchaText = document.getElementById("captcha").textContent;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            if (userInput !== captchaText) {
+                document.getElementById("result").textContent = "CAPTCHA is incorrect. Please try again.";
+                return false;
+            } else {
+                document.getElementById("result").textContent = "CAPTCHA is correct. Logging in...";
+                return true;
+            }
+        }
+
+        // Initialize by generating the first CAPTCHA
+        generateCaptcha();
+    </script>
+</body>
+
+</html>

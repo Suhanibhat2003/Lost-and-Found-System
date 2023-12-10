@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report found item</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style type="text/css">
+
+body {
+  background-color: #f8f9fa;
+}
+
+.card {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.card-header {
+  border-bottom: none;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  width: 100%;
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+</style>
+</head>
+<body>
+   <form action="found.php" method="post"  enctype="multipart/form-data">
+  <video playsinline autoplay muted loop poster="http://localhost/logincred/images/captcha.jpg" id="bgvid">
+ 
+  <source src="http://localhost/logincred/images/binary.mp4" type="video/mp4">
+</video>
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">Report Found Item</h3>
+      </div>
+      <div class="card-body">
+        <form id="claimForm">
+           <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="text" class="form-control" id="Name" name="Name" required>
+          </div>
+          <div class="form-group">
+            <label for="itemName">Item Name:</label>
+            <!--<input type="text" class="form-control" id="itemName" name="itemName" required>-->
+            <select class="form-control" id="itemName" name="itemName" required>
+            <option value="">Select an item</option>
+            <option value="Item 1">CLOTHING</option>
+            <option value="Item 2">ACCESSORIES</option>
+            <option value="Item 3">JEWELLERY</option>
+            <option value="Item 4">OTHERS</option>
+    <!-- Add more <option> elements for different item names as needed -->
+  </select>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" class="form-control" id="description" name="description" required>
+          </div>
+
+          <div class="form-group">
+              <label for="imageUpload">Upload Image:</label>
+              <input type="file" id="imageUpload" name="imageUpload">
+          </div>
+
+          <div class="form-group">
+            <label for="contactInfo">Contact Information:</label>
+            <input type="text" class="form-control" id="contactInfo" name="contactInfo" required>
+          </div>
+          <div class="form-group">
+            <label for="vcode">Verification Code:</label>
+            <input type="text" class="form-control" id="vcode" name="vcode" required>
+          </div>
+
+          <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

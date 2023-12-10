@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      
+      <title>Dashboard | By Code Info</title>
+      <link rel="stylesheet" href="started.css" >
+      <!-- Font Awesome Cdn Link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+
+
+
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo"></div>
+            <nav>
+            <ul class="menu">
+                <li class="active" >
+                   <a href="">
+                    <img src="/logo.jpg" alt="">
+                    <span class="nav-item">DashBoard</span>
+                  </a></li>
+                  <li><a href="http://localhost/logincred/admin.html">
+                    <i class="fa fa-user"></i>
+                    <span class="nav-item">Admin</span>
+                   
+                  </a></li>
+                  <li><a href="http://localhost/logincred/dash/lost.html">
+                    <i class="fas fa-wallet"></i>
+                    <span class="nav-item">lost item</span>
+                  </a></li>
+                  <li><a href="http://localhost/logincred/dash/found.html">
+                    <i class="fas fa-chart-bar"></i>
+                    <span class="nav-item">found item</span>
+                    
+                  </a></li>
+                  <li><a href="http://localhost/logincred/dash/claim.html">
+                    <i class="fas fa-tasks"></i>
+                    <span class="nav-item">claim item</span>
+                  </a></li>
+                  <li><a href="dash/feedback.html">
+                    <i class="fas fa-comments"></i>
+                    <span class="nav-item">feedback</span>
+                  </a></li>
+                  <li><a href="">
+                    <i class="fas fa-question-circle"></i>
+                    <span class="nav-item">Help</span>
+                  </a></li>
+                  <li><a href="http://localhost/logincred/Index_main.html" class="logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="nav-item">Log out</span>
+                  </a></li>
+                
+                
+            </ul>
+            </nav>
+        </div>
+        <div class="main--content">
+            <div class="header--wrapper">
+                <div class="header--title">
+              <span>Lost and found</span>
+              <h2>DashBoard</h2>  
+            </div>
+            <div class="user--info">
+                <div class="searh--box">
+                <i class="fas fa-search"></i>
+               <input type="text" placeholder="Search"/>
+            </div>
+            <img src="http://localhost/logincred/images/OIP.jpeg">
+        </div>
+    </div> 
+    <div class="card--container">
+        <h3 class="mian--title">Report</h3>
+        <div class="card--wrapper">
+            <div class="payment--card 
+            light-purple">
+                <div class="card--header">
+                    <div class="amount">
+                        <!--<span class="title">
+                          
+                        </span>-->
+                        <span class="amount--value">  Report lost item</span>
+                        <button id="openButton">Report item</button>
+    
+
+                    </div>
+                    <i class="fas fa-list icon dark-red"></i>
+
+                </div>
+               
+            </div>
+            <div class="payment--card 
+            light-green">
+                <div class="card--header">
+                    <div class="amount">
+                        <!--<span class="title">
+                           
+                        </span>-->
+                        <span class="amount--value">Report found item</span>
+                        <button id="openButton1">Report item</button>
+                    </div>
+                    <i class="fas fa-list icon dark-green"></i>
+
+                </div>
+                
+            </div>
+            <div class="payment--card 
+            light-blue">
+                <div class="card--header">
+                    <div class="amount">
+                        
+                        <span class="amount--value">Claim item</span>
+                        <br>
+                        <button id="openButton2">claim item</button>
+                    </div>
+                   <i class="fas fa-list icon dark-purple"></i>
+
+                </div>
+                
+
+            </div>
+            
+            
+        </div>
+
+        </div>
+        <section class="items lost">
+          <h1>Items</h1>
+          <div class="course-box">
+            <ul>
+              <li class="active">Explore</li>
+            </ul>
+            <div class="course">
+              <div class="box">
+                <h3>No.of Items lost</h3>
+                <p></p>
+                <button id="openButton3">continue</button>
+                <i class=""></i>
+              </div>
+              <div class="box">
+                <h3>No.of Items found </h3>
+                <p></p>
+                <button id="openButton4">continue</button>
+                <i class=""></i>
+              </div>
+              <div class="box">
+                <h3>No.of Items claimed.</h3>
+                <p></p>
+                <button id="openButton5">continue</button>
+                <i class=""></i>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      
+    </div>
+    <script>
+
+document.getElementById("openButton").addEventListener("click", function() {
+    window.location.href = "http://localhost/logincred/dash/lost.html";
+});
+document.getElementById("openButton1").addEventListener("click", function() {
+    window.location.href = "http://localhost/logincred/dash/found.html";
+});
+document.getElementById("openButton2").addEventListener("click", function() {
+    window.location.href = "http://localhost/logincred/dash/claim.html";
+});
+document.getElementById("openButton3").addEventListener("click", function() {
+    window.location.href = "http://localhost/logincred/dash/nolost.php";
+});
+
+document.getElementById("openButton4").addEventListener("click", function() {
+    window.location.href = "http://localhost/logincred/dash/nofound.php";
+});
+
+document.getElementById("openButton5").addEventListener("click", function() {
+    window.location.href = "http://localhost/logincred/dash/noclaim.php";
+});
+
+</script>
+           
+            
+    </body>
+    </html>
