@@ -22,12 +22,12 @@ Lost and Found website, a digital haven designed to transform the often stressfu
 
 ## Features
 
--Streamline lost item reporting with a user-friendly interface, simplifying the process for users.
--Establish a centralized database to systematically catalog reported lost items, aiding users in identifying and claiming their possessions.
--Prioritize inclusivity by designing the website to be accessible to users of all technological backgrounds.
--Foster community engagement through features like user forums, encouraging active participation in the lost and found network.
--Provide clear guidance and user support throughout the item recovery process to assist users effectively.
--Ensure optimal functionality across devices with responsive design, enhancing user experience on various platforms.
+-Streamline lost item reporting with a user-friendly interface, simplifying the process for users.<br>
+-Establish a centralized database to systematically catalog reported lost items, aiding users in identifying and claiming their possessions.<br>
+-Prioritize inclusivity by designing the website to be accessible to users of all technological backgrounds.<br>
+-Foster community engagement through features like user forums, encouraging active participation in the lost and found network.<br>
+-Provide clear guidance and user support throughout the item recovery process to assist users effectively.<br>
+-Ensure optimal functionality across devices with responsive design, enhancing user experience on various platforms.<br>
 -Continuously improve the platform based on user feedback and analytics, integrating new tools to enhance efficiency.
 
 
