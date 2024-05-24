@@ -2,6 +2,7 @@
  
 </div>
 Lost anf Found Management System
+#About
 
 Lost and Found website, a digital haven designed to transform the often stressful experience of losing and finding items into a seamless journey of rediscovery. We understand the emotional weight that losing valuable possessions carries, and this platform is dedicated to providing a compassionate and efficient solution.
 ## Preview
