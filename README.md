@@ -5,9 +5,12 @@
 Lost and Found website, a digital haven designed to transform the often stressful experience of losing and finding items into a seamless journey of rediscovery. We understand the emotional weight that losing valuable possessions carries, and this platform is dedicated to providing a compassionate and efficient solution.
 ## Preview
 
-![Preview Image](https://github.com/Suhanibhat2003/Skin-Disease-Detection-System/blob/main/Screenshot%20(21).png)
-![Preview Image](https://github.com/Suhanibhat2003/Skin-Disease-Detection-System/blob/main/Screenshot%20(22).png)
-![Preview Image](https://github.com/Suhanibhat2003/Skin-Disease-Detection-System/blob/main/Screenshot%20(24).png)
+![Preview Image](https://github.com/Suhanibhat2003/Lost-and-Found-System/blob/main/Picture2.jpg)
+![Preview Image](https://github.com/Suhanibhat2003/Lost-and-Found-System/blob/main/Picture3.jpg)
+![Preview Image](https://github.com/Suhanibhat2003/Lost-and-Found-System/blob/main/Picture4.jpg)
+![Preview Image](https://github.com/Suhanibhat2003/Lost-and-Found-System/blob/main/Picture5.jpg)
+![Preview Image](https://github.com/Suhanibhat2003/Lost-and-Found-System/blob/main/Picture6.jpg)
+
 
 
 
@@ -28,7 +31,7 @@ Lost and Found website, a digital haven designed to transform the often stressfu
 <!--tech stack icons-->
 <p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=css,html,js,php,xampp,sublimetext&perline=14" />
+    <img src="https://skillicons.dev/icons?i=css,html,js,php&perline=14" />
     <img/>
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" width="47" height="47" 
       style="height:47px;width:auto;border-radius:8rem;overflow: hidden"/>
