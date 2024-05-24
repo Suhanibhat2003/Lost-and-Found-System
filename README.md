@@ -1,12 +1,14 @@
 <div style="display: flex; align-items: center;">
  
 </div>
+Lost anf Found Management System
 
 Lost and Found website, a digital haven designed to transform the often stressful experience of losing and finding items into a seamless journey of rediscovery. We understand the emotional weight that losing valuable possessions carries, and this platform is dedicated to providing a compassionate and efficient solution.
 ## Preview
 
-![Preview Image](https://github.com/Suhanibhat2003/Lost-and-Found-System/blob/main/Picture2.jpg)
+
 ![Preview Image](https://github.com/Suhanibhat2003/Lost-and-Found-System/blob/main/Picture3.jpg)
+![Preview Image](https://github.com/Suhanibhat2003/Lost-and-Found-System/blob/main/Picture2.jpg)
 ![Preview Image](https://github.com/Suhanibhat2003/Lost-and-Found-System/blob/main/Picture4.jpg)
 ![Preview Image](https://github.com/Suhanibhat2003/Lost-and-Found-System/blob/main/Picture5.jpg)
 ![Preview Image](https://github.com/Suhanibhat2003/Lost-and-Found-System/blob/main/Picture6.jpg)
